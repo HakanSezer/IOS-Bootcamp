@@ -1,0 +1,39 @@
+
+/* Class = "UILabel"; text = "Meat lover, get ready to meet your pizza!"; ObjectID = "2G1-1d-7Fr"; */
+"2G1-1d-7Fr.text" = "Et sever, pizzanla tanışmaya hazır mısın";
+
+/* Class = "UILabel"; text = "20 min"; ObjectID = "8k8-JB-ojb"; */
+"8k8-JB-ojb.text" = "20 Dk";
+
+/* Class = "UILabel"; text = "$ 5.98"; ObjectID = "Fge-iS-hWK"; */
+"Fge-iS-hWK.text" = "162 ₺";
+
+/* Class = "UILabel"; text = "Delivery"; ObjectID = "OMP-No-VIK"; */
+"OMP-No-VIK.text" = "Teslimat";
+
+/* Class = "UIButton"; configuration.title = "Paper"; ObjectID = "WXd-mR-FKi"; */
+"WXd-mR-FKi.configuration.title" = "Biber";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "WXd-mR-FKi"; */
+"WXd-mR-FKi.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "Sausage"; ObjectID = "fIY-AP-9L8"; */
+"fIY-AP-9L8.configuration.title" = "Sucuk";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "fIY-AP-9L8"; */
+"fIY-AP-9L8.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "ADD TO CART"; ObjectID = "n6A-Pt-UbX"; */
+"n6A-Pt-UbX.configuration.title" = "Sepete Ekle";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "n6A-Pt-UbX"; */
+"n6A-Pt-UbX.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Beef Cheese"; ObjectID = "os6-lp-wrx"; */
+"os6-lp-wrx.text" = "Etli Peynirli";
+
+/* Class = "UIButton"; configuration.title = "Cheese"; ObjectID = "pAm-Sr-IPF"; */
+"pAm-Sr-IPF.configuration.title" = "Peynir";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "pAm-Sr-IPF"; */
+"pAm-Sr-IPF.normalTitle" = "Button";
