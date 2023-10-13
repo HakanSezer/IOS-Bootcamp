@@ -15,6 +15,7 @@
 		34A06EFF2AD9626D00550007 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34A06EFD2AD9626D00550007 /* LaunchScreen.storyboard */; };
 		34A06F072AD963E400550007 /* OyunEkraniVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A06F062AD963E400550007 /* OyunEkraniVC.swift */; };
 		34A06F092AD963EF00550007 /* SonucEkraniVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A06F082AD963EF00550007 /* SonucEkraniVC.swift */; };
+		34A06F0B2AD971CC00550007 /* Kisiler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A06F0A2AD971CC00550007 /* Kisiler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		34A06F002AD9626D00550007 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		34A06F062AD963E400550007 /* OyunEkraniVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OyunEkraniVC.swift; sourceTree = "<group>"; };
 		34A06F082AD963EF00550007 /* SonucEkraniVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SonucEkraniVC.swift; sourceTree = "<group>"; };
+		34A06F0A2AD971CC00550007 /* Kisiler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kisiler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				34A06EF22AD9626200550007 /* AppDelegate.swift */,
 				34A06EF42AD9626200550007 /* SceneDelegate.swift */,
 				34A06EF62AD9626200550007 /* AnaSayfaVC.swift */,
+				34A06F0A2AD971CC00550007 /* Kisiler.swift */,
 				34A06EF82AD9626200550007 /* Main.storyboard */,
 				34A06F062AD963E400550007 /* OyunEkraniVC.swift */,
 				34A06F082AD963EF00550007 /* SonucEkraniVC.swift */,
@@ -149,6 +152,7 @@
 				34A06EF32AD9626200550007 /* AppDelegate.swift in Sources */,
 				34A06EF52AD9626200550007 /* SceneDelegate.swift in Sources */,
 				34A06F072AD963E400550007 /* OyunEkraniVC.swift in Sources */,
+				34A06F0B2AD971CC00550007 /* Kisiler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

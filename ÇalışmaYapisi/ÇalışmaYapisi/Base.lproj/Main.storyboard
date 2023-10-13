@@ -50,7 +50,20 @@
                             <constraint firstItem="lgM-vA-KMW" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ckG-pM-siv"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="SQi-Cn-yyg"/>
+                    <navigationItem key="navigationItem" id="SQi-Cn-yyg">
+                        <rightBarButtonItems>
+                            <barButtonItem systemItem="add" id="G7Y-sy-z42">
+                                <connections>
+                                    <action selector="buttonAdd:" destination="BYZ-38-t0r" id="FpZ-Et-g1s"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem systemItem="save" id="xKi-Ru-GEL">
+                                <connections>
+                                    <action selector="buttonSave:" destination="BYZ-38-t0r" id="UAc-ms-say"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
+                    </navigationItem>
                     <connections>
                         <outlet property="anaSayfaLabel" destination="j7M-hS-udP" id="uf1-uw-kjB"/>
                         <segue destination="qvt-OF-f7q" kind="show" identifier="oyunEkraninaGecis" id="LLv-oK-24X"/>
