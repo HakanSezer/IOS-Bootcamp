@@ -101,6 +101,7 @@
                     <navigationItem key="navigationItem" title="Ürünler" id="FaQ-Su-l3s"/>
                     <connections>
                         <outlet property="urunlerTableView" destination="y1r-ZJ-zU9" id="Dr5-ba-EIj"/>
+                        <segue destination="Kgf-sx-hdH" kind="show" identifier="toDetay" id="OU4-n5-h69"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -114,13 +115,46 @@
                     <view key="view" contentMode="scaleToFill" id="wR3-Gl-ayh">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="telefon" translatesAutoresizingMaskIntoConstraints="NO" id="4dd-1s-Q4X">
+                                <rect key="frame" x="68.666666666666686" y="187" width="256" height="256"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iWQ-1a-hZv">
+                                <rect key="frame" x="32" y="751" width="329" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Sepete Ekle"/>
+                                <connections>
+                                    <action selector="buttonSepeteEkle:" destination="Kgf-sx-hdH" eventType="touchUpInside" id="khr-jW-R7F"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="35999 ₺" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UmT-9l-Nvd">
+                                <rect key="frame" x="137.66666666666666" y="475" width="118" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="Ffh-9s-gcp"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="4dd-1s-Q4X" firstAttribute="top" secondItem="Ffh-9s-gcp" secondAttribute="top" constant="32" id="2ie-xA-Elf"/>
+                            <constraint firstItem="UmT-9l-Nvd" firstAttribute="top" secondItem="4dd-1s-Q4X" secondAttribute="bottom" constant="32" id="5gt-e2-tWg"/>
+                            <constraint firstItem="Ffh-9s-gcp" firstAttribute="bottom" secondItem="iWQ-1a-hZv" secondAttribute="bottom" constant="32" id="Hmu-Tm-RRO"/>
+                            <constraint firstItem="4dd-1s-Q4X" firstAttribute="centerX" secondItem="wR3-Gl-ayh" secondAttribute="centerX" id="L7C-MI-sY1"/>
+                            <constraint firstItem="iWQ-1a-hZv" firstAttribute="leading" secondItem="Ffh-9s-gcp" secondAttribute="leading" constant="32" id="Po0-kH-vF8"/>
+                            <constraint firstItem="UmT-9l-Nvd" firstAttribute="centerX" secondItem="wR3-Gl-ayh" secondAttribute="centerX" id="d8W-wX-w6i"/>
+                            <constraint firstItem="Ffh-9s-gcp" firstAttribute="trailing" secondItem="iWQ-1a-hZv" secondAttribute="trailing" constant="32" id="q3P-EX-XUq"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="3Tm-aS-fuN"/>
+                    <connections>
+                        <outlet property="imageViewUrun" destination="4dd-1s-Q4X" id="IZv-OS-FwN"/>
+                        <outlet property="labelUrunFiyat" destination="UmT-9l-Nvd" id="oMt-TE-o6r"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9cy-pX-9iY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1683.206106870229" y="-35.211267605633807"/>
+            <point key="canvasLocation" x="1850" y="-35"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="qwa-Q0-1AS">
@@ -142,6 +176,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="telefon" width="256" height="256"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

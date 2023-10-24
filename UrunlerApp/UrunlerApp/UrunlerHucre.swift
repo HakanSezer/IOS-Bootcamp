@@ -7,12 +7,19 @@
 
 import UIKit
 
+protocol HucreProtocol {
+    func sepeteEkleTiklandi(indexPath: IndexPath)
+}
+
 class UrunlerHucre: UITableViewCell {
     @IBOutlet weak var hucreArkaPlan: UIView!
     @IBOutlet weak var urunFiyat: UILabel!
     @IBOutlet weak var urunAd: UILabel!
     @IBOutlet weak var imageViewUrun: UIImageView!
     
+    // Anasayfadan almış olduğumuz bilgileri gösterebilmek için kullanmaktayız.
+    var hucreProtocol: HucreProtocol?
+    var indexPath:IndexPath?
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -26,6 +33,7 @@ class UrunlerHucre: UITableViewCell {
     
     //MARK: - Actions
     @IBAction func urunSepeteEkle(_ sender: Any) {
+        hucreProtocol?.sepeteEkleTiklandi(indexPath: indexPath!)
     }
     
 }
