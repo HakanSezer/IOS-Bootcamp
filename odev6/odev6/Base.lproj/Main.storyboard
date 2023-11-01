@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="h0u-3H-TLa">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Ara-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Şimdi Dinle" image="play.circle.fill" catalog="system" id="KUH-a4-3dM"/>
+                    <navigationItem key="navigationItem" title="Ara" id="BPY-Xt-hp4">
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="person.crop.circle" catalog="system" id="hAT-AO-wn1">
+                            <color key="tintColor" systemColor="systemPinkColor"/>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1642" y="-454"/>
+        </scene>
+        <!--Arşiv-->
+        <scene sceneID="nsh-5O-Lag">
+            <objects>
+                <viewController id="9qJ-wQ-z5l" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fZb-EW-Pud">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="4Nh-1m-MGz"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Arşiv" image="square.stack.fill" catalog="system" id="uhY-7w-flp"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rBB-y9-mKQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-15" y="322"/>
+        </scene>
+        <!--Radyo-->
+        <scene sceneID="3bx-Bn-9ar">
+            <objects>
+                <viewController id="TxH-FO-WPX" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HIu-dl-NCp">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="3GI-A8-lKr"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Radyo" image="dot.radiowaves.left.and.right" catalog="system" id="t1Z-XA-Zlq"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NR1-zO-Xi6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-11" y="-356"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="Vsl-LB-0vD">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="h0u-3H-TLa" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="3pH-Oz-uUx">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="Irb-wr-ngq"/>
+                        <segue destination="v5W-MI-p2i" kind="relationship" relationship="viewControllers" id="4KE-Qf-JV4"/>
+                        <segue destination="TxH-FO-WPX" kind="relationship" relationship="viewControllers" id="Zdd-hc-dco"/>
+                        <segue destination="9qJ-wQ-z5l" kind="relationship" relationship="viewControllers" id="za1-ft-wdg"/>
+                        <segue destination="HS2-ES-P8u" kind="relationship" relationship="viewControllers" id="jiV-Gz-7OS"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xhz-Dn-l0g" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="799.23664122137404" y="-71.83098591549296"/>
+        </scene>
+        <!--Ara-->
+        <scene sceneID="eA9-ME-rUA">
+            <objects>
+                <viewController id="CuA-Nr-mNy" customClass="ViewController" customModule="odev6" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KCd-re-t6S">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" placeholder="Sanatçı, Parça, Şarkı Sözü..." translatesAutoresizingMaskIntoConstraints="NO" id="dCR-Mu-mST">
+                                <rect key="frame" x="0.0" y="155" width="393" height="56"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="CuA-Nr-mNy" id="3uR-tL-ohT"/>
+                                </connections>
+                            </searchBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Katagorilere Göz At" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ddh-qD-Qt8">
+                                <rect key="frame" x="16" y="221" width="189" height="27"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="hWw-Rh-27t">
+                                <rect key="frame" x="15" y="248" width="363" height="472"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Lgm-aP-gGb">
+                                    <size key="itemSize" width="180" height="125"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="muziklerHucre" id="oz5-dD-O33" customClass="MuzikCollectionViewCell" customModule="odev6" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="170" height="140"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="T4e-pc-5gB">
+                                            <rect key="frame" x="0.0" y="0.0" width="170" height="140"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Resim1" translatesAutoresizingMaskIntoConstraints="NO" id="wBz-rV-9C8">
+                                                    <rect key="frame" x="0.0" y="0.0" width="170" height="140"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="170" id="qEx-mn-tyr"/>
+                                                        <constraint firstAttribute="height" constant="140" id="sgN-au-Si0"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="wBz-rV-9C8" firstAttribute="leading" secondItem="T4e-pc-5gB" secondAttribute="leading" id="5DC-Rd-TYE"/>
+                                                <constraint firstAttribute="trailing" secondItem="wBz-rV-9C8" secondAttribute="trailing" id="UY1-T5-xdZ"/>
+                                                <constraint firstAttribute="bottom" secondItem="wBz-rV-9C8" secondAttribute="bottom" id="kss-DU-NzT"/>
+                                                <constraint firstItem="wBz-rV-9C8" firstAttribute="top" secondItem="T4e-pc-5gB" secondAttribute="top" id="xDz-RD-6lm"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <connections>
+                                            <outlet property="imageView" destination="wBz-rV-9C8" id="Uje-43-9lQ"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="2cb-IP-3Mx"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="dCR-Mu-mST" firstAttribute="trailing" secondItem="2cb-IP-3Mx" secondAttribute="trailing" id="Eov-sb-ZZK"/>
+                            <constraint firstItem="ddh-qD-Qt8" firstAttribute="leading" secondItem="2cb-IP-3Mx" secondAttribute="leading" constant="16" id="Lzn-Ja-9MT"/>
+                            <constraint firstItem="ddh-qD-Qt8" firstAttribute="top" secondItem="dCR-Mu-mST" secondAttribute="bottom" constant="10" id="PSQ-M3-9KL"/>
+                            <constraint firstItem="2cb-IP-3Mx" firstAttribute="trailing" secondItem="hWw-Rh-27t" secondAttribute="trailing" constant="15" id="cvM-ZM-FPf"/>
+                            <constraint firstItem="hWw-Rh-27t" firstAttribute="top" secondItem="ddh-qD-Qt8" secondAttribute="bottom" id="diE-sF-bqQ"/>
+                            <constraint firstItem="dCR-Mu-mST" firstAttribute="leading" secondItem="2cb-IP-3Mx" secondAttribute="leading" id="kJR-kh-dfV"/>
+                            <constraint firstItem="dCR-Mu-mST" firstAttribute="top" secondItem="2cb-IP-3Mx" secondAttribute="top" id="tbq-Kd-M1Y"/>
+                            <constraint firstItem="2cb-IP-3Mx" firstAttribute="bottom" secondItem="hWw-Rh-27t" secondAttribute="bottom" id="trL-i4-PqY"/>
+                            <constraint firstItem="hWw-Rh-27t" firstAttribute="leading" secondItem="2cb-IP-3Mx" secondAttribute="leading" constant="15" id="wWE-G8-A39"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Ara" leftItemsSupplementBackButton="YES" style="browser" id="QcI-t0-vBe">
+                        <barButtonItem key="rightBarButtonItem" title="Item" id="UVa-ZV-5vi">
+                            <imageReference key="image" image="person.crop.circle" catalog="system" variableValue="0.0"/>
+                            <color key="tintColor" systemColor="systemRedColor"/>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="muziklerCollectionView" destination="hWw-Rh-27t" id="Mif-Lp-9rR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="60H-mF-Kjb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1724.4274809160304" y="717.6056338028169"/>
+        </scene>
+        <!--Göz At-->
+        <scene sceneID="Adg-vQ-So8">
+            <objects>
+                <viewController id="v5W-MI-p2i" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aa9-R2-ObE">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="dIw-2z-4g5"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Göz At" image="square.split.2x2.fill" catalog="system" id="Ovh-hm-q3k"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IHw-QR-wqq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2568.7022900763359" y="250.7042253521127"/>
+        </scene>
+        <!--Ara-->
+        <scene sceneID="Ein-29-P3m">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="HS2-ES-P8u" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Ara" image="magnifyingglass" catalog="system" id="yRp-SE-fZO"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="rb7-CV-fiu">
+                        <rect key="frame" x="0.0" y="59" width="393" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="CuA-Nr-mNy" kind="relationship" relationship="rootViewController" id="OlU-Sr-7ye"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gyl-6Y-nD7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="797.70992366412213" y="717.6056338028169"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Resim1" width="326" height="225"/>
+        <image name="dot.radiowaves.left.and.right" catalog="system" width="128" height="91"/>
+        <image name="magnifyingglass" catalog="system" width="128" height="117"/>
+        <image name="person.crop.circle" catalog="system" width="128" height="123"/>
+        <image name="play.circle.fill" catalog="system" width="128" height="123"/>
+        <image name="square.split.2x2.fill" catalog="system" width="128" height="114"/>
+        <image name="square.stack.fill" catalog="system" width="105" height="128"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
