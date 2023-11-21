@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Map view configurations" minToolsVersion="14.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="LokasyonKullanimi" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TyX-SJ-g17">
+                                <rect key="frame" x="175.66666666666666" y="109" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P66-Qt-m7O">
+                                <rect key="frame" x="175.66666666666666" y="180" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3fI-Xt-gnW">
+                                <rect key="frame" x="175.66666666666666" y="251" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Clc-im-owQ">
+                                <rect key="frame" x="32" y="335" width="329" height="451"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="329" id="2MM-fY-UXS"/>
+                                </constraints>
+                                <standardMapConfiguration key="preferredConfiguration"/>
+                            </mapView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="3fI-Xt-gnW" firstAttribute="top" secondItem="P66-Qt-m7O" secondAttribute="bottom" constant="50" id="1Dc-JK-eSx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Clc-im-owQ" secondAttribute="trailing" constant="32" id="BG0-uN-zWo"/>
+                            <constraint firstItem="P66-Qt-m7O" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HKI-Zk-dYU"/>
+                            <constraint firstItem="Clc-im-owQ" firstAttribute="top" secondItem="3fI-Xt-gnW" secondAttribute="bottom" constant="63" id="Kwk-Db-tQL"/>
+                            <constraint firstItem="Clc-im-owQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="OqV-8B-M8g"/>
+                            <constraint firstItem="TyX-SJ-g17" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="h8H-Lp-Cnl"/>
+                            <constraint firstItem="3fI-Xt-gnW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hqq-Wu-jAC"/>
+                            <constraint firstItem="P66-Qt-m7O" firstAttribute="top" secondItem="TyX-SJ-g17" secondAttribute="bottom" constant="50" id="kVY-xB-zE2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Clc-im-owQ" secondAttribute="bottom" constant="32" id="nEy-qg-17t"/>
+                            <constraint firstItem="TyX-SJ-g17" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="v80-q7-8AB"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="labelBoylam" destination="P66-Qt-m7O" id="Y4E-oT-gtW"/>
+                        <outlet property="labelEnlem" destination="TyX-SJ-g17" id="WxA-cG-BQB"/>
+                        <outlet property="labelHız" destination="3fI-Xt-gnW" id="w95-mL-ByS"/>
+                        <outlet property="mapView" destination="Clc-im-owQ" id="3Vq-uT-X71"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2.2900763358778624" y="-27.464788732394368"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
